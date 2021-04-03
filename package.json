@@ -1,0 +1,11 @@
+{
+  "name": "portfolio_v2",
+  "version": "1.0.0",
+  "description": "Portfolio for Evandro Rodrigues",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch ./assets/scss/styles.scss ./assets/css/styles.css"
+  },
+  "author": "Evandro Rodrigues",
+  "license": "ISC"
+}

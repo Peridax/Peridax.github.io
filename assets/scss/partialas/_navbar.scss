@@ -1,0 +1,16 @@
+.siimple-navbar {
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  color: #fff;
+  top: 0;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+
+    &.active {
+      border-bottom: 1px solid #fff;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css');
+
+/* Importing Libraries */
+@import "../vendors/bootstrap/scss/bootstrap.scss";
+@import '../vendors/fullpage/src/fullpage.css';
+
+/* Importing Partialas */
+@import './partialas/_general.scss';
+@import './partialas/_navbar.scss';
+@import './partialas/_others.scss';
+@import './partialas/_typography.scss';
+
+/* Importing Pages */
+@import './pages/_home.scss';
+@import './pages/skills.scss';
