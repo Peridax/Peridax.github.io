@@ -1,0 +1,17 @@
+#section4 {
+	.contact-form {
+		max-width: 500px;
+		margin: 0 auto;
+
+		label {
+			color: rgba(0, 0, 0, 0.75)!important;
+		}
+	}
+
+	.btn-primary {
+		@extend .w-100, .text-white;
+
+		height: 58px;
+
+	}
+}

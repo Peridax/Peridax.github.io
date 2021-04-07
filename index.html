@@ -16,11 +16,11 @@
 				<div class="row">
 					<div class="col-12 text-center fw-bold">
 						<h1 class="mb-0 display-1">Hello, I'm Evandro Rodrigues</h1>
-						<h1 class="my-0 display-2">I'm a <span id="skill-text" class="text-dark">Full Stack Developer</span></h1>
+						<h1 class="my-0 display-2">I'm a <span id="skill-text" class="text-dark"></span></h1>
 
 						<div id="menu-btns" data-anchor="skills" class="mt-5">
 							<a href="#skills">
-								<img src="assets/images/arrow.svg" alt="arrow" height="50" width="50" id="arrow" />
+								<span class="arrow"></span>
 							</a>
 						</div>
 					</div>
@@ -119,6 +119,14 @@
 					<div class="container">
 						<div class="row">
 							<p class="text-center">Hello World</p>
+							<div class="slider-controls">
+                  <a class="custom-prev" href="#">
+                      <span>prev</span>
+                  </a>
+                  <a class="custom-next" href="#">
+                      <span>next</span>
+                  </a>
+              </div>
 						</div>
 					</div>
 				</div>
@@ -128,17 +136,35 @@
 				</div>
 			</div>
 			<div class="section" id="section4">
-				<div class="siimple-grid">
-					<div class="siimple-grid-row">
-						<div class="siimple-grid-col siimple-grid-col--12 siimple--text-center">
-							<h1>Evandro Rodrigues</h1>
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-12">
+							<h1 class="display-3 category-title">CONTACT ME</h1>
+							<form action="https://formspree.io/f/mleaenvj" method="POST" class="contact-form" id="contact-form">
+								<div class="form-floating mb-3">
+								  <input type="text" class="form-control" id="floatingName" placeholder="John Smith" name="name">
+								  <label for="floatingName">Name</label>
+								</div>
+								<div class="form-floating mb-3">
+								  <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" name="email">
+								  <label for="floatingEmail">Email</label>
+								</div>
+								<div class="form-floating mb-3">
+								  <textarea class="form-control" placeholder="Leave a comment here" id="floatingMessage" style="height: 150px; resize: none;" name="message"></textarea>
+								  <label for="floatingMessage">Message</label>
+								</div>
+							  <button type="submit" class="btn btn-primary">SUBMIT</button>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<div class="toast-container position-absolute bottom-0 end-0 p-3"></div>
+
 		<script type="text/javascript" src="./assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="./assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="./assets/vendors/fullpage/src/fullpage.js"></script>
 		<script type="text/javascript" src="./assets/vendors/fullpage/src/fullpage.extensions.min.js"></script>
 		<script type="text/javascript" src="./assets/js/main.js"></script>
