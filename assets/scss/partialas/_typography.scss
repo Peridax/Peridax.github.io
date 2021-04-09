@@ -6,6 +6,6 @@ h1.category-title {
 
 @media screen and (max-width: 576px) {
   .category-title {
-    @extend .mb-3;
+    margin-bottom: 2rem!important;
   }
 }
