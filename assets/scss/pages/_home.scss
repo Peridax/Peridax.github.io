@@ -1,5 +1,6 @@
 #section1 {
   #skill-text {
+    -webkit-animation: blinking 1s infinite;
     animation: blinking 1s infinite;
     padding-right: 5px;
 
@@ -9,6 +10,16 @@
       background-color: #000;
       display: inline-block;
       content: " ";
+    }
+
+    @-webkit-keyframes blinking {
+      from, to {
+        border-right: 2px solid transparent;
+      }
+
+      50% {
+        border-right: 2px solid #000;
+      }
     }
 
     @keyframes blinking {
@@ -31,7 +42,22 @@
     border-right: 5px solid #fff;
     top: 0px;
     transform: rotate(135deg);
+    -webkit-animation: movement 2s infinite;
     animation: movement 2s infinite;
+
+    @-webkit-keyframes movement {
+      0%, 20%, 50%, 80%, 100% {
+        top: 0px;
+      }
+
+      40% {
+        top: 20px;
+      }
+
+      60% {
+        top: 10px;
+      }
+    }
 
     @keyframes movement {
       0%, 20%, 50%, 80%, 100% {
