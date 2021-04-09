@@ -7,12 +7,13 @@ $(() => {
 
       dragAndMove: true,
       loopBottom: true,
+      loopTop: true,
       navigation: true,
       slidesNavigation: true,
       slidesNavPosition: 'bottom',
 	    showActiveTooltip: false,
 
-      controlArrows: true
+      controlArrows: false
   });
 
   const desired = "Full Stack Developer"
@@ -31,11 +32,11 @@ $(() => {
 
   skillLoop()
 
-  $('.custom-prev').click(() => {
+  $('.prev').click(() => {
     fullpage_api.moveSlideLeft();
   })
 
-  $('.custom-next').click(() => {
+  $('.next').click(() => {
     fullpage_api.moveSlideRight();
   })
 

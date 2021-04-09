@@ -10737,7 +10737,7 @@ textarea.form-control-lg {
 }
 /* Importing Partialas */
 body, html {
-  color: #fff;
+  color: #000;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -10838,6 +10838,41 @@ h1.category-title, .category-title.h1 {
 }
 #section2 .skills-icon i {
   font-size: 5rem;
+}
+
+#section3 .portfolio-img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+#section3 .portfolio-title {
+  font-weight: 500;
+}
+#section3 .custom-arrow {
+  text-decoration: none;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+#section3 .custom-arrow .arrow {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  top: 0px;
+}
+#section3 .custom-arrow .arrow.arrow-prev {
+  transform: rotate(-135deg);
+}
+#section3 .custom-arrow .arrow.arrow-next {
+  transform: rotate(45deg);
+}
+#section3 .custom-arrow.prev:hover {
+  padding-left: 10px;
+}
+#section3 .custom-arrow.next:hover {
+  padding-right: 10px;
 }
 
 #section4 .contact-form {

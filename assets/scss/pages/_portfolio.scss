@@ -1,0 +1,43 @@
+#section3 {
+  .portfolio-img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: .5rem;
+  }
+
+  .portfolio-title {
+    font-weight: 500;
+  }
+
+  .custom-arrow {
+    text-decoration: none;
+    transition: 0.5s all;
+    cursor: pointer;
+
+    .arrow {
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-top: 2px  solid #000;
+      border-right: 2px  solid #000;
+      top: 0px;
+
+      &.arrow-prev {
+        transform: rotate(-135deg);
+      }
+
+      &.arrow-next {
+        transform: rotate(45deg);
+      }
+    }
+
+    &.prev:hover {
+      padding-left: 10px;
+    }
+
+    &.next:hover {
+      padding-right: 10px;
+    }
+  }
+}
